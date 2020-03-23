@@ -7,7 +7,7 @@ cd /var/www/html
 sudo rm -rf admin/
 sudo git clone https://github.com/pi-hole/AdminLTE admin
 
-#Rever pihole's webpage
+#Revert pihole's webpage
 cd /opt/pihole/
 sudo rm webpage.sh
 sudo wget https://github.com/pi-hole/pi-hole/raw/master/advanced/Scripts/webpage.sh
@@ -18,7 +18,7 @@ pihole -up
 
 #Update lastest speedtest-mod
 cd /var/www/html
-sudo mv admin admin_org
+sudo rm -rf admin/
 sudo git clone https://github.com/TooManyEggrolls/AdminLTE admin
 
 #Update latest webpage.sh for speedtest-mod
