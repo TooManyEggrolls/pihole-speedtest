@@ -20,6 +20,8 @@ sudo pip install speedtest-cli &> /dev/null
 
 sudo apt install sqlite3 -y &> /dev/null
 
+sudo apt install -y jq &> /dev/null
+
 cd /var/www/html
 
 sudo mv admin pihole_admin
