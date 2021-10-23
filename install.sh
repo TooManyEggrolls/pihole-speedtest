@@ -14,9 +14,7 @@ else
 
 fi
 
-sudo apt install python-pip -y &> /dev/null
-
-#sudo pip install speedtest-cli &> /dev/null
+sudo apt install python3-pip -y &> /dev/null
 
 cd /tmp
 
