@@ -16,7 +16,15 @@ fi
 
 sudo apt install python-pip -y &> /dev/null
 
-sudo pip install speedtest-cli &> /dev/null
+#sudo pip install speedtest-cli &> /dev/null
+
+cd /tmp
+
+wget https://install.speedtest.net/app/cli/ookla-speedtest-1.0.0-armhf-linux.tgz
+
+tar -xvzf ookla-speedtest-1.0.0-armhf-linux.tgz
+
+sudo mv speedtest /usr/bin/speedtest
 
 sudo apt install sqlite3 -y &> /dev/null
 
